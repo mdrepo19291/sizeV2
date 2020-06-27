@@ -1,0 +1,92 @@
+$font-bree-serif: "Bree Serif",sans-serif;
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.text-shadow {
+  text-shadow: 1px 2px 10px rgb(49, 49, 49);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+html {
+  font-size: 14px;
+}
+a, a:visited, a:hover {
+  text-decoration: none;
+  color: #212529;
+}
+body {
+  background-color: #fafafa;
+}
+
+main {
+  min-height: 75vh;
+}
+
+// Sidebar
+.nav-link {
+  letter-spacing: 0.8px;
+  &.active {
+    // background-color: #ffffff4a;
+    border-radius: 0.6rem;
+    font-weight: 700;
+  }
+}
+.MuiPaper-root {
+  min-width: 16rem;
+  a {
+    color: #222;
+  }
+}
+.MuiTypography-body1 {
+  font-size: 0.9rem!important;
+}
+
+// Main-Section
+
+.main-section {
+  img {
+    // box-shadow: 0px 0px 40px 40px #4aacc5, 0px 0px 60px 80px #fff;
+    max-height: 20rem;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    animation: coverImgBlend 10s infinite;
+  }
+}
+
+@keyframes coverImgBlend {
+  0% {box-shadow: 0px 0px 40px 40px #4aacc5, 0px 0px 60px 80px #e1d0fd;}
+  25%{box-shadow: 0px 0px 40px 40px #4aacc5, 0px 0px 60px 80px #bac5e7;}
+  50%{box-shadow: 0px 0px 40px 40px #4aacc5, 0px 0px 60px 80px #96ffef;}
+  75%{box-shadow: 0px 0px 40px 40px #4aacc5, 0px 0px 60px 80px #afffd6;}
+  100% {box-shadow: 0px 0px 40px 40px #4aacc5, 0px 0px 60px 80px #e0cffa;}
+}
+
+// Default spacing for the top header section
+.nav-spacing {
+  height: 7rem;
+  background: linear-gradient(to bottom, #8ce9ff 0%,#00ff8077 100%);
+  box-shadow: 0px 0px 40px 40px #00ff8077;
+  // margin-bottom: 2rem;
+}
+
+
+.card.card-cascade .view.view-cascade {
+  padding: 1.6rem 1rem;
+  text-align: center;
+}
+
+.MuiFab-label {
+  margin-top: .2rem;
+}
